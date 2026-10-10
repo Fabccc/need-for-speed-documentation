@@ -24,7 +24,7 @@ enum CompressionType {
 
 Usually, they use those compression when packing assets for the final game, and they compress part of binary files, often meshes.
 
-> Personnaly, I think they just run all of these algorithms, and based on the size of their output, pick the one which performs the best.
+> They just run all of these algorithms, and based on the size of their output, pick the one which performs the best.
 > Those codec were made for low complexity in time and in space for hardware with as little as 32Mb of RAM (for exemple the PS2 had 32Mb of RAM and 4Mb of VRAM as described [here](https://en.wikipedia.org/wiki/PlayStation_2#Hardware))
 
 [Someone exceptionnal](https://github.com/RayneDuarte/EAC/tree/main) made a github repo containing all of the original compression AND decompression algorithm, probably found in all the released [Electronic Arts](https://github.com/ElectronicArts) repo. Also, the EA organization contains amazing repositories.

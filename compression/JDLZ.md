@@ -17,7 +17,9 @@ the next byte is literal data Flag2 is for dicting how to handle the data.
 | `0x08` |       `uint32`       | `decompressed_size`  | Size of the uncompressed data in bytes                            |
 | `0x0C` |       `uint32`       | `compressed_size`    | Total size of the compressed block (including the 16-byte header) |
 
-## Decompression
+## JDLZ v0x02
+
+### Decompression
 
 Pseudo code decompression algorithm
 
@@ -103,6 +105,7 @@ uint8* decompress(const uint8* in, usize in_len, usize expected_decompressed_siz
     }
     return out;
 }
+```
 
 ### Compression
 
@@ -257,3 +260,4 @@ uint8* compress(const uint8* in, usize in_len, usize* out_len) {
     *out_len = out_pos;
     return out;
 }
+```
